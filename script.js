@@ -1,5 +1,8 @@
-$.getJSON( "../categories.json", function( data ) {
+$.getJSON( "categories.json", function( data ) {
   var createTable = '';
+  for (var key in data){
+
+  };
   $.each(data.categories, function (i, item) {
       createTable += '<tr style="height:100px;"><td style="background-color: ' + item.categoryColor + ';">' + item.categoryName + '</td><td style="width:140px" id="drag"></td></tr>';
   });
@@ -7,7 +10,7 @@ $.getJSON( "../categories.json", function( data ) {
 }).fail(function(){
     console.log("An error has occurred.");
 });
-$.getJSON( "../data/set1.json", function( data ) {
+$.getJSON( "data/set1.json", function( data ) {
   var images = data.images;
   var createImages = '';
   $.each(images, function (i, item) {
