@@ -1,10 +1,8 @@
 $.getJSON( "categories.json", function( data ) {
   var createTable = '';
-  for (var key in data){
-
-  };
+  
   $.each(data.categories, function (i, item) {
-      createTable += '<tr style="height:100px;"><td style="background-color: ' + item.categoryColor + ';">' + item.categoryName + '</td><td style="width:140px" id="drag"></td></tr>';
+      createTable += '<tr style="height:100px;"><td style="background-color: ' + item.categoryColor + ';">' + item.categoryName + '</td><td style="width:140px" class="drag"></td></tr>';
   });
   $('#records_table').append(createTable);
 }).fail(function(){
@@ -23,13 +21,10 @@ $.getJSON( "data/set1.json", function( data ) {
 
 
 $(function() {
-  $('#create_images').sortable({
-      connectWith: '#records_table #drag'
+  $('#create_images, #records_table .drag').sortable({
+      connectWith: '#records_table .drag, #create_images'
   });
-  $('#records_table #drag').sortable({
-      connectWith: '#create_images'
-  });
-});
+}); 
 
 
 
