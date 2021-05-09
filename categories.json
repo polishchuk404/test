@@ -1,0 +1,26 @@
+{
+    "categories": [
+        {
+           "categoryColor": "red",
+           "categoryName": "red"
+        },
+        {
+            "categoryColor": "brown",
+            "categoryName": "brown"
+         },
+         {
+            "categoryColor": "yellow",
+            "categoryName": "yellow"
+         },
+         {
+            "categoryColor": "green",
+            "categoryName": "green"
+         },
+         {
+            "categoryColor": "pink",
+            "categoryName": "pink"
+         }
+        
+    ]
+ }
+ 

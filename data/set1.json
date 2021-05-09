@@ -1,0 +1,27 @@
+{
+    "imageSetName": "Somename",
+    "images": [
+        {
+           "imagePath": "../data/images/photo1.png",
+           "imageName": "photo1"
+        },
+        {
+            "imagePath": "../data/images/photo2.png",
+            "imageName": "photo2"
+         },
+         {
+            "imagePath": "../data/images/photo3.png",
+            "imageName": "photo3"
+         },
+         {
+            "imagePath": "../data/images/photo4.png",
+            "imageName": "photo4"
+         },
+         {
+            "imagePath": "../data/images/photo5.png",
+            "imageName": "photo5"
+         }
+        
+    ]
+ }
+ 
