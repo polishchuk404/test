@@ -2,23 +2,23 @@
     "categories": [
         {
            "categoryColor": "red",
-           "categoryName": "red"
+           "categoryName": "AAA"
         },
         {
             "categoryColor": "brown",
-            "categoryName": "brown"
+            "categoryName": "DDD"
          },
          {
             "categoryColor": "yellow",
-            "categoryName": "yellow"
+            "categoryName": "BBB"
          },
          {
             "categoryColor": "green",
-            "categoryName": "green"
+            "categoryName": "CCC"
          },
          {
             "categoryColor": "pink",
-            "categoryName": "pink"
+            "categoryName": "EEE"
          }
         
     ]

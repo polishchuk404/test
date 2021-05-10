@@ -3,23 +3,23 @@
     "images": [
         {
            "imagePath": "data/images/photo1.png",
-           "imageName": "photo1"
+           "imageName": "BBB"
         },
         {
             "imagePath": "data/images/photo2.png",
-            "imageName": "photo2"
+            "imageName": "AAA"
          },
          {
             "imagePath": "data/images/photo3.png",
-            "imageName": "photo3"
+            "imageName": "EEE"
          },
          {
             "imagePath": "data/images/photo4.png",
-            "imageName": "photo4"
+            "imageName": "DDD"
          },
          {
             "imagePath": "data/images/photo5.png",
-            "imageName": "photo5"
+            "imageName": "CCC"
          }
         
     ]
