@@ -1,26 +1,18 @@
 {
     "imageSetName": "Somename",
     "images": [
-        {
-           "imagePath": "data/images/photo1.png",
-           "imageName": "BBB"
-        },
-        {
-            "imagePath": "data/images/photo2.png",
-            "imageName": "AAA"
-         },
-         {
-            "imagePath": "data/images/photo3.png",
-            "imageName": "EEE"
-         },
-         {
-            "imagePath": "data/images/photo4.png",
-            "imageName": "DDD"
-         },
-         {
-            "imagePath": "data/images/photo5.png",
-            "imageName": "CCC"
-         }
+      {
+         "imagePath": "data/images/photo1.png",
+         "imageName": "DDD"
+      },
+      {
+          "imagePath": "data/images/photo2.png",
+          "imageName": "BBB"
+       },
+       {
+          "imagePath": "data/images/photo3.png",
+          "imageName": "AAA"
+       }
         
     ]
  }
