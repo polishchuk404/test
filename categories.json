@@ -1,23 +1,23 @@
 {
     "categories": [
         {
-           "categoryColor": "red",
+           "categoryColor": "#ff0000",
            "categoryName": "AAA"
         },
         {
-            "categoryColor": "brown",
+            "categoryColor": "#a52a2a",
             "categoryName": "DDD"
          },
          {
-            "categoryColor": "yellow",
+            "categoryColor": "#ffff00",
             "categoryName": "BBB"
          },
          {
-            "categoryColor": "green",
+            "categoryColor": "#008000",
             "categoryName": "CCC"
          },
          {
-            "categoryColor": "pink",
+            "categoryColor": "#ffc0cb",
             "categoryName": "EEE"
          }
         
