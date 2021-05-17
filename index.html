@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-</head>
-<body>
-    <div style="padding: 20px 60px;">
-        <label>setting</label>
-        <select id="set">
-            <option value="set1" selected="selected">set1</option>
-            <option value="set2">set2</option>
-            <option value="set3">set3</option>
-        </select>
-        <button>load</button>
+  </head>
+  <body>
+    <div>
+      <label>setting</label>
+      <select id="set">
+        <option value="set1" selected="selected">set1</option>
+        <option value="set2">set2</option>
+        <option value="set3">set3</option>
+      </select>
+      <button>load</button>
     </div>
-    <table id="records_table" border="1">
-        <tr>
-            <th>Name</th>
-            <th>Image</th>
-        </tr>
+    <table id="records_table">
+      <tr>
+        <th>Name</th>
+        <th>Image</th>
+      </tr>
     </table>
-    <div id="create_images" style="display:flex; width:80vw; min-height:100px; overflow-x: auto;"></div>
+    <div id="create_images"></div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
     <script src="script.js"></script>
