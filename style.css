@@ -1,4 +1,4 @@
-div:first-child{
+div:first-of-type{
     padding: 20px 60px;
 }
 #create_images{
@@ -14,7 +14,7 @@ td{
     min-height:100px;
     min-width:140px;
 }
-td:last-child{
+td:last-of-type{
     display: flex;
 }
 .drag{

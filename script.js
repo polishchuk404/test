@@ -39,8 +39,8 @@ $( "button" ).click(function() {
 });
 
 function dragNdrop() {
-  $('#create_images, td:last-child').sortable({
-    connectWith: 'td:last-child, #create_images',
+  $('#create_images, td:last-of-type').sortable({
+    connectWith: 'td:last-of-type, #create_images',
     update: function(event, ui) {
       var sort_container = $('#' +ui.item.parent().attr('id'));
       var images = $(sort_container.children());
