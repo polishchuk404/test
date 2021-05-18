@@ -1,4 +1,4 @@
-div:first-of-type{
+div:first-child{
     padding: 20px 60px;
 }
 #create_images{
@@ -13,6 +13,9 @@ table, td, tr, th{
 td{
     min-height:100px;
     min-width:140px;
+}
+td:last-child{
+    display: flex;
 }
 .drag{
     display:flex;

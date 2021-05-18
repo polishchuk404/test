@@ -1,9 +1,16 @@
 $.getJSON( "categories.json", function( data ) {
-  var createTable = '';
   $.each(data.categories, function (i, item) {
-      createTable += '<tr><td style="background-color: ' + item.categoryColor + ';">' + item.categoryName + '</td><td id="'+item.categoryName+'" class="drag"></td></tr>';
+    $("#records_table").find('tbody')
+    .append($('<tr>')
+      .append($('<td>')
+        .css('background-color', item.categoryColor)
+        .text(item.categoryName)
+      )
+      .append($('<td>')
+        .attr('id', item.categoryName)
+      )
+      )
   });
-  $('#records_table').append(createTable);
 }).done(function() {
   getImages();
 }).fail(function(){
@@ -11,13 +18,15 @@ $.getJSON( "categories.json", function( data ) {
 });
 
 function getImages() {
-  var $set = $("#set option:checked").val();
-  $.getJSON( "data/"+ $set +".json",  function( data ) {
-    var createImages = '';
+  var set = $("#set option:checked").val();
+  $.getJSON( "data/"+ set +".json",  function( data ) {
     $.each(data.images, function (i, item) {
-      createImages += '<img data-name="' + item.imageName + '"  src="' + item.imagePath + '" alt="">';
+      $("#create_images")
+      .append($('<img>')
+        .attr('data-name', item.imageName)
+        .attr('src', item.imagePath)
+      )
     });
-    $('#create_images').append(createImages);
   }).done(function() {
     dragNdrop();
     sortImages();
@@ -30,8 +39,8 @@ $( "button" ).click(function() {
 });
 
 function dragNdrop() {
-  $('#create_images, .drag').sortable({
-    connectWith: '.drag, #create_images',
+  $('#create_images, td:last-child').sortable({
+    connectWith: 'td:last-child, #create_images',
     update: function(event, ui) {
       var sort_container = $('#' +ui.item.parent().attr('id'));
       var images = $(sort_container.children());
