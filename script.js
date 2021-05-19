@@ -1,15 +1,6 @@
 $.getJSON( "categories.json", function( data ) {
   $.each(data.categories, function (i, item) {
-    $("#records_table").find('tbody')
-    .append($('<tr>')
-      .append($('<td>')
-        .css('background-color', item.categoryColor)
-        .text(item.categoryName)
-      )
-      .append($('<td>')
-        .attr('id', item.categoryName)
-      )
-      )
+    $('#template_table').tmpl(item).appendTo('#records_table');
   });
 }).done(function() {
   getImages();
@@ -21,11 +12,7 @@ function getImages() {
   var set = $("#set option:checked").val();
   $.getJSON( "data/"+ set +".json",  function( data ) {
     $.each(data.images, function (i, item) {
-      $("#create_images")
-      .append($('<img>')
-        .attr('data-name', item.imageName)
-        .attr('src', item.imagePath)
-      )
+      $('#template_img').tmpl(item).appendTo('#create_images');
     });
   }).done(function() {
     dragNdrop();
